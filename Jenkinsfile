@@ -4,7 +4,7 @@ pipeline {
       maven "3.9.1"
     }
    stages {
-      stage ('Build') {
+      stage ('Build 1') {
          steps {
             sh 'mvn clean package' 
             echo "Development is successful"
