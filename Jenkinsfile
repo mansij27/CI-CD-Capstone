@@ -20,7 +20,7 @@ pipeline {
          steps {
             script{
                deploy adapters: [tomcat9(credentialsId: 'TomcatCreds', path: '', url: 'http://3.26.98.133:7070/')], contextPath: null, onFailure: false, war: '**/*.war'
-               echo 'Production is successful'
+               echo 'Production is successful..'
             }
          }
       }
